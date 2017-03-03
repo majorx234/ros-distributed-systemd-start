@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>distributed_systemd_start</name>
+  <version>1.0.1</version>
+  <description>The distributed_systemd_start package</description>
+  <maintainer email="majorx234@gmail.com">Marc Etzhold</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">not yet</url>
+
+  <author email="semael23@gmail.com">Peter Rudolph</author>
+  <author email="majorx234@gmail.com">Marc Etzhold</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>rospy</depend>
+  <depend>ssh</depend>
+  <depend>libavahi-client-dev</depend>
+  <depend>libavahi-core-dev</depend>
+  <depend>python-avahi</depend>
+  <exec_depend>avahi-daemon</exec_depend>
+
+</package>

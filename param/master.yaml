@@ -1,0 +1,5 @@
+slaves:
+- ros-slave1
+launch:
+  pkg: distributed_systemd_start
+  file: demo.launch
