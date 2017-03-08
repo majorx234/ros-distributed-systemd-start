@@ -79,7 +79,7 @@ def create_systemd_script(iface):
     global ROS_BIN
     global user
     template = [
-        '[Unit]'
+        '[Unit]',
         'Description=Ros Distributed Systemd Start',
         'After=sshd.service',
         '[Service]',
@@ -208,12 +208,12 @@ if check_settings():
     print 'Wrote systemd script to "/etc/systemd/system/distributed-ros.service".'
     
     #set file attributes
-    try:
-        command = "chmod +x /etc/systemd/system/distributed-ros.service"
-        subprocess.call(["/usr/bin/sudo", "sh", "-c", command])
-    except:
-        raise
-    print 'Changed attributes of systemd script "/etc/systemd/system/distributed-ros.service".'
+    # try:
+    #    command = "chmod +x /etc/systemd/system/distributed-ros.service"
+    #    subprocess.call(["/usr/bin/sudo", "sh", "-c", command])
+    #except:
+    #    raise
+    #print 'Changed attributes of systemd script "/etc/systemd/system/distributed-ros.service".'
     
     #enable systemd service
     try:
